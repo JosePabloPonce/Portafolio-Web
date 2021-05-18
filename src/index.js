@@ -1,22 +1,28 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Presentacion from './componentes/Presentacion/presentacion'
+import NavigationBar from './componentes/NavigationBar/navigationbar'
+import AcercaDeMi from './componentes/AcercaDeMi/acercademi'
+import Habilidades from './componentes/Habilidades/habilidades'
+import Proyectos from './componentes/Proyectos/proyectos'
 
 document.body.style.margin = '0'
 document.body.style.paddding = '0'
 
 const Contenedor = () => {
-  const estilo = {
-    display: 'flex',
-    flexDirection: 'column',
+  const estilogeneral = {
     width: '100%',
-    height: '100%',
-    justifyContent: 'center',
-    alignItems: 'center',
-    background: 'linear-gradient(rgb(35, 68, 77) 0%, rgb(48, 129, 132) 61%, rgb(32, 189, 186) 100%)',
+    height: 'auto',
   }
 
   return (
-    <div style={estilo} />
+    <div style={estilogeneral}>
+      <Presentacion />
+      <NavigationBar />
+      <AcercaDeMi />
+      <Habilidades />
+      <Proyectos />
+    </div>
   )
 }
 ReactDOM.render(

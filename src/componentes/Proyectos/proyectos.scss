@@ -1,0 +1,22 @@
+.ContenedorGeneralProyectos{
+    width: 100%;
+    height: 100%;
+    background: rgb(233, 230, 230);
+}
+
+.contenedortituloproyectos{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    padding-top: 42px;
+    }
+
+    
+.contenedortituloproyectos h1{
+        height: 50px;
+        color: #05182A;
+        font-family: verdana;
+        border-bottom: 3px solid #05182A;
+        margin-left: auto;
+        margin-right: auto;
+}

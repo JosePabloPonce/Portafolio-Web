@@ -1,0 +1,116 @@
+.contenedorHabilidadesGeneral{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-bottom: 42px;
+    background: rgb(255, 255, 255);
+}
+.contenedorhabilidadestitulo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 42px;
+    }
+
+.contenedorhabilidadestitulo h1{
+    height: 50px;
+    color: #05182A;
+    font-family: verdana;
+    border-bottom: 3px solid #05182A;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenedordehabilidades{
+    margin-top: 42px;
+    display: flex;
+    width: 50%;
+    height: auto;
+    border: 5px solid;
+    flex-direction: column;
+    border-style: groove;
+    box-shadow: 7px 9px #888888;
+}
+
+.contenedorespecificohabilidades{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+}
+
+.contenedorhabilidad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    width: auto;
+}
+
+.contenedordehabilidades h2{
+    width: auto;
+    display: flex;
+    border-bottom: 3px solid;
+    border-bottom-style:groove;
+    color: rgb(22, 6, 66);
+    font-weight: bold;
+    font-family: verdana;
+    padding-bottom: 10px;
+}
+
+.contenedorhabilidad h3{
+    display: flex;
+    align-items: center;
+    color: rgb(22, 6, 66);
+    font-weight: lighter;
+    font-family: verdana;
+}
+
+.estiloLogosJava{
+    width: auto;
+}
+
+@media screen and (min-width: 280px) and (max-width: 767px)  {
+    .estiloLogosJava{
+        height: 50px;
+    }
+
+    .contenedordehabilidades h2{
+        justify-content: center;
+        font-size: 20px;
+    }
+    .contenedorhabilidad h3{
+        justify-content: center;
+        font-size: 16px;
+    }
+    .contenedorhabilidad{
+        justify-content: center;
+        width: 100%;
+    }
+}
+  
+  @media screen and (min-width: 768px) {
+    .estiloLogosJava{
+        height: 80px;
+    }
+
+    .contenedordehabilidades h2{
+        padding-left: 30px;
+        font-size: 25px;
+    }
+
+    .contenedorhabilidad h3{
+        justify-content: center;    
+        font-size: 20px;
+    }
+
+    .contenedorhabilidad{
+        margin-left: 50px;
+        width: 120px;
+    }
+
+  }
+  

@@ -11,6 +11,9 @@ module.exports = {
   plugins: [new HtmlWebpackPlugin({
     templateContent: `
 <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 <body>
 <div id="root"></div>
 <script src="./main.js"></script>
@@ -33,8 +36,8 @@ module.exports = {
         ,
       },
       {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        test: /\.s[ac]ss$/i,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
     ],
   },
