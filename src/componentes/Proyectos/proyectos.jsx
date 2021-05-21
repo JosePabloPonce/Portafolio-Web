@@ -1,28 +1,55 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import './proyectos.scss'
-import calculadora1 from './Imagenes/calculadora1.png'
-import crunchyroll1 from './Imagenes/crunchyroll1.png'
-import laberinto1 from './Imagenes/laberinto1.png'
+import Modal from 'react-modal'
 
-const Proyectos = () => (
-  <div className="ContenedorGeneralProyectos" id="proyectos">
-    <div className="contenedortituloproyectos">
-      <h1> Proyectos</h1>
+const customStyles = {
+  content: {
+    width: '700px',
+    height: '500px',
+    left: '0',
+    right: '0',
+    margin: 'auto',
+    top: '0',
+    bottom: '0',
+  },
+}
+
+Modal.setAppElement('#root')
+const Proyectos = () => {
+  const [modalIsOpen, setIsOpen] = React.useState(false)
+
+  return (
+    <div className="ContenedorGeneralProyectos" id="proyectos">
+      <div className="contenedortituloproyectos">
+        <h1> Proyectos Seleccionados</h1>
+      </div>
+      <div className="contenedorproyectos">
+        <div className="contenedorgeneralfotos">
+          <div className="contenedorcalculadora">
+            <h2> Calculadora</h2>
+            <button type="button" className="botonoculto" onClick={() => setIsOpen(true)}> Ver mas </button>
+            <Modal style={customStyles} classname="modal" isOpen={modalIsOpen} onRequestClose={() => setIsOpen(false)}>
+              <h2> prueba</h2>
+              <button type="button" onClick={() => setIsOpen(false)}> cerrar </button>
+            </Modal>
+          </div>
+        </div>
+        <div className="contenedorgeneralfotos">
+          <div className="contenedorcrunchyroll">
+            <h2> Crunchyroll</h2>
+            <button type="button" className="botonoculto"> Ver mas </button>
+          </div>
+        </div>
+        <div className="contenedorgeneralfotos">
+          <div className="contenedorlaberinto">
+            <h2> Laberinto</h2>
+            <button type="button" className="botonoculto"> Ver mas </button>
+          </div>
+        </div>
+
+      </div>
     </div>
-    <div className="contenedorproyectos">
-      <div>
-        <img src={calculadora1} alt=" calculadora" className="estiloimagenproyecto" />
-      </div>
-      <div>
-        <img src={crunchyroll1} alt="crunchyroll" className="estiloimagenproyecto" />
-      </div>
-      <div>
-        <img src={laberinto1} alt="Logo Jest" className="estiloimagenproyecto" />
-      </div>
-      <div>
-        <img src={calculadora1} alt="Logo Jest" className="estiloimagenproyecto" />
-      </div>
-    </div>
-  </div>
-)
+  )
+}
 export default Proyectos

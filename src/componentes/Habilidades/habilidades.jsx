@@ -50,18 +50,12 @@ const NavigationBar = () => (
     </div>
 
     <div className="contenedordehabilidades">
-      <h2>HTML</h2>
+      <h2>Web</h2>
       <div className="contenedorespecificohabilidades">
         <div className="contenedorhabilidad">
           <img src={html5} alt="Logo HTML5" className="estiloLogosJava" />
           <h3>HTML5</h3>
         </div>
-      </div>
-    </div>
-
-    <div className="contenedordehabilidades">
-      <h2>CSS</h2>
-      <div className="contenedorespecificohabilidades">
         <div className="contenedorhabilidad">
           <img src={css3} alt="Logo CSS3" className="estiloLogosJava" />
           <h3>CSS3</h3>

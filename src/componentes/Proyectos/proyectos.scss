@@ -1,8 +1,8 @@
+
 .ContenedorGeneralProyectos{
     width: 100%;
     height: auto;
     padding-bottom: 42px;
-
     overflow: hidden;
     background: rgb(233, 230, 230);
 }
@@ -13,17 +13,18 @@
     width: auto;
     padding-top: 42px;
     padding-bottom: 42px;
-
     }
 
     
 .contenedortituloproyectos h1{
-        height: 50px;
+        height: auto;
+        padding-bottom: 10px;
         color: #05182A;
         font-family: verdana;
         border-bottom: 3px solid #05182A;
         margin-left: auto;
         margin-right: auto;
+        width:min-content;
 }
 
 
@@ -35,14 +36,97 @@
     justify-content: center;
 }
 
-.contenedorproyectos div{
-    width: 410px;
+.contenedorgeneralfotos div{
+    width: 400px;
+    height: 210px;
     margin-top: 10px;
     display: flex;
-    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    transition: all 3s;
+
 }
 
+.contenedorgeneralfotos div:hover .botonoculto{
+    transition: all 0.5s;
+    margin-bottom: 17%;
 
+
+}
+
+.contenedorgeneralfotos div h2{
+    opacity: 0;
+    color: rgba(36, 30, 30, 0.829);
+
+}
+
+.contenedorgeneralfotos div:hover h2{
+    transition: all 0.5s;
+    margin-top: 16%;
+    font-family: verdana;
+    font-weight: bolder;
+    border-width: 1px;
+    font-size: 20px;
+
+}
+.contenedorcalculadora{
+    background-image: url(./Imagenes/calculadora1.png) ;
+}
+
+.contenedorcalculadora:hover{
+    background: linear-gradient(rgba(255, 255, 255, 0.856), rgba(255, 255, 255, 0.753)),url(./Imagenes/calculadora1.png) ;
+    background-position: center;
+    background-size: cover;
+   
+}
+
+.botonoculto{
+    width: 130px;
+    height: 38px;
+    background: none;
+    opacity: 0;
+    border-color:   rgb(228, 38, 187);
+    color: rgba(36, 30, 30, 0.829);
+    border-width: 2px;
+    font-family: verdana;
+    font-weight: bolder;
+    border-width: 1.5px;
+    font-size: 17px;
+    border-radius: 2.3px;
+    cursor:pointer;
+}
+
+.botonoculto:hover{
+    background-color: rgba(228, 38, 187, 0.74);
+
+}
+.contenedorcrunchyroll{
+    background: url(./Imagenes/crunchyroll1.png) ;
+}
+
+.contenedorcrunchyroll:hover{
+    background: linear-gradient(rgba(255, 255, 255, 0.856), rgba(255, 255, 255, 0.753)),url(./Imagenes/crunchyroll1.png) ;
+    background-position: center;
+    background-size: cover;
+}
+
+.contenedorlaberinto{
+    background-image: url(./Imagenes/laberinto2.png) ;
+}
+
+.contenedorlaberinto:hover{
+    background: linear-gradient(rgba(255, 255, 255, 0.856), rgba(255, 255, 255, 0.753)),url(./Imagenes/laberinto2.png) ;
+    background-position: center;
+    background-size: cover;
+}
+
+.contenedorgeneralfotos{
+    width: 410px;
+    height: 220px;
+}
 
 @media screen and (min-width: 280px) and (max-width: 1109px)  {
     .contenedorproyectos{
@@ -56,7 +140,6 @@
         width: 270px;
         height: 160px;
         object-fit: cover;
-
     }
 }
 
@@ -73,4 +156,28 @@
         grid-template-columns: auto auto;
     }
   }
+
+.contenedorgeneralfotos div:hover button{
+    opacity: 1;
+}
+
+.contenedorgeneralfotos div:hover h2{
+    opacity: 1;
+}
+
+
+.ReactModal__Overlay {
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: all 500ms ease-in-out;
+  }
   
+  .ReactModal__Overlay--after-open {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  
+  .ReactModal__Overlay--before-close {
+    opacity: 0;
+    transform: translateY(-100px);
+  }

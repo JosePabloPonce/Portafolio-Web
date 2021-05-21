@@ -46,11 +46,16 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    
+}
+.nuevogradiante{
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .remarcado {
-  background: -webkit-linear-gradient(rgb(255, 35, 35), #251414);
+  background: -webkit-linear-gradient(rgb(248, 5, 5), #ffffff);
   -webkit-background-clip: text;
   background-clip: text;
 
@@ -132,7 +137,6 @@ $shadows-big:    multiple-box-shadow(250);
   justify-content: center;
   align-items: center;
   color: #dbc9c9;
-  height: 50px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 100;
   line-height: 1.5;
@@ -140,6 +144,7 @@ $shadows-big:    multiple-box-shadow(250);
   border: 2px solid rgba(255, 255, 255, 0.507);  
   list-style-type: none;
   text-decoration: none;
+  padding-left: 10px;
 }
 
 .boton:hover{
@@ -173,17 +178,21 @@ $shadows-big:    multiple-box-shadow(250);
 @media screen and (min-width: 280px) and (max-width: 767px)  {
   .boton {
     font-size: 15px;
-    width: 170px;
+    width: 140px;
+    height: 45px;
+
   }
   .titulo {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .boton {
     font-size: 20px;
-    width: 225px;
+    width: 215px;
+    height: 50px;
+
   }
   .titulo {
     font-size: 50px;

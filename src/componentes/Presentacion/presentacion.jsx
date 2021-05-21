@@ -11,10 +11,10 @@ const Presentacion = () => (
       </div>
       <div className="contenedorcontenido">
         <h1 className="titulo">
-          Hola, soy
+          <span className="nuevogradiante"> Hola, soy </span>
           <span className="remarcado">  Jose Pablo Ponce </span>
           <br />
-          Soy Full-Stack Web Developer
+          <span className="nuevogradiante">  Full-Stack Web Developer </span>
           <br />
         </h1>
         <a href="#acercademi" className="boton">
