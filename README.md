@@ -3,7 +3,7 @@
 Descripcion: En el siguiente proyecto se muestran las tecnologias web que conozco, asi como proyectos que he elaborado a lo largo de mi carrera
 
 
-Link subido en servidor: http://ubeje.xyz/19092/proyecto1_19092/dist/
+Link subido en servidor:https://josepabloponce.github.io/
 
 Instalacion: Utilizar el comando "npm install" para intalar todas las dependencias, utilizar el comando "npm run build" para hacer el build en el package.json
 
