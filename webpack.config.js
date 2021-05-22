@@ -13,6 +13,7 @@ module.exports = {
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
 </head>
 <body>
 <div id="root"></div>
@@ -36,7 +37,7 @@ module.exports = {
         ,
       },
       {
-        test: /\.s[ac]ss$/i,
+		test: /\.(sa|sc|c)ss$/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
     ],
