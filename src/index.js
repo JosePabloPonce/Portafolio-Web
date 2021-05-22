@@ -5,6 +5,7 @@ import NavigationBar from './componentes/NavigationBar/navigationbar'
 import AcercaDeMi from './componentes/AcercaDeMi/acercademi'
 import Habilidades from './componentes/Habilidades/habilidades'
 import Proyectos from './componentes/Proyectos/proyectos'
+import Contacto from './componentes/Contacto/contacto'
 
 document.body.style.margin = '0'
 document.body.style.paddding = '0'
@@ -22,6 +23,7 @@ const Contenedor = () => {
       <AcercaDeMi />
       <Habilidades />
       <Proyectos />
+      <Contacto />
     </div>
   )
 }

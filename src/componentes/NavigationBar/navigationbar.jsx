@@ -8,7 +8,7 @@ const NavigationBar = () => (
       <li><a href="#acercademi">Acerca de mi</a></li>
       <li><a href="#habilidades">Habilidades</a></li>
       <li><a href="#proyectos">Proyectos</a></li>
-      <li><a href="#news">Contacto</a></li>
+      <li><a href="#contacto">Contacto</a></li>
     </div>
   </div>
 )

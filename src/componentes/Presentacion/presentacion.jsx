@@ -18,7 +18,7 @@ const Presentacion = () => (
           <br />
         </h1>
         <a href="#acercademi" className="boton">
-          Explorar Trabajo &nbsp;
+          Explorar Trabajo
           <span className="flecha" />
         </a>
       </div>
